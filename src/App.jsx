@@ -72,7 +72,7 @@ function App() {
       alert("Please write some code to run");
       return;
     }
-    const response = await axios.post("http://localhost:8000/api/v1/generate", {
+    const response = await axios.post("https://code-helper-server-beige.vercel.app/api/v1/generate", {
       code: code,
     });
     console.log(response);
