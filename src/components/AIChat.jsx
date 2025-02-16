@@ -14,12 +14,12 @@ const AIChat = ({
 
   return (
     <div className="h-full w-full p-2 text-[13px] relative flex flex-col items-center">
-      <div className="h-[calc(100%-154px-2rem)] w-[calc(90%-1rem)] mt-4 rounded-[25px] overflow-scroll bg-[#031525] relative">
+      <div className="h-[calc(100%-154px-2rem)] w-[calc(90%-1rem)] mt-4 rounded-[25px] overflow-scroll bg-[#021220] relative">
         {isIdol ? (
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center w-full">
             <h2 className="linear-wipe">How can I help you today?</h2>
           </div>
-        ) : !isReviewLoading ? (
+        ) : isReviewLoading ? (
           <div className="linear-wipe absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
             mimo is evaluating
           </div>
