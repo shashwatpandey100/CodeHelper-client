@@ -3,7 +3,7 @@ import React from "react";
 const Output = ({ output, setOutput, isLoading }) => {
   return (
     <div
-      className={`h-[calc(210px-6px)] w-full rounded-lg border border-[#1d2b4d] px-6 py-4 relative ${
+      className={`h-[calc(160px-6px)] w-full border-t border-[#1d2b4d65] px-6 py-4 relative ${
         isLoading ? "flex items-center justify-center" : ""
       }`}
     >
@@ -16,15 +16,16 @@ const Output = ({ output, setOutput, isLoading }) => {
         />
       ) : (
         <p className="text-[13px] text-white/30 font-[500]">
-          Click "run" to see the output here.
+          <span className="text-[13px]">Click "run" to see the output here.</span>
         </p>
       )}
-      <div
+      <button
+      title="clear output"
         onClick={() => setOutput("")}
-        className="absolute bottom-2 right-2 cursor-pointer w-max rounded-md bg-[#5413ab] hover:bg-[#5413ab]/80 text-[12px] flex items-center justify-center px-4 py-1.5 gap-2 font-[600]"
+        className="absolute bottom-[12px] right-[12px] cursor-pointer w-max rounded-md bg-[#5413ab] hover:bg-[#5413ab]/80 text-[12px] flex items-center justify-center px-4 py-1.5 gap-2 font-[600]"
       >
         Clear
-      </div>
+      </button>
     </div>
   );
 };

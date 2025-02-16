@@ -1,0 +1,126 @@
+/* Headings */
+p {
+    margin: 7px 0;
+    font-size: 1.1em;
+    margin-bottom: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: #222;
+    margin-top: 1.5em;
+}
+
+h1 {
+    font-size: 2em;
+    color: #ddd;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 8px;
+}
+
+h2 {
+    font-size: 1.75em;
+    color: #ddd;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 6px;
+}
+
+h3 {
+    font-size: 1.8em;
+    color: #ddd;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+/* Paragraphs & Text */
+p {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+}
+
+/* Links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Lists */
+ul, ol {
+    margin: 1em 0;
+    padding-left: 20px;
+}
+
+ul {
+    list-style-type: "🔹 ";
+    font-size: 1.1em;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+code {
+    background: #eeeeee25;
+    padding: 1px 5px;
+    border-radius: 4px;
+    font-family: "Fira Code", monospace;
+}
+
+/* Blockquotes */
+blockquote {
+    border-left: 4px solid #007bff;
+    padding: 10px;
+    background: #f8f9fa;
+    font-style: italic;
+    margin: 10px 0;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #007bff;
+    color: white;
+}
+
+/* Alerts */
+.alert {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.alert.info {
+    background: #d9edf7;
+    color: #31708f;
+}
+
+.alert.success {
+    background: #dff0d8;
+    color: #3c763d;
+}
+
+.alert.warning {
+    background: #fcf8e3;
+    color: #8a6d3b;
+}
+
+.alert.error {
+    background: #f2dede;
+    color: #a94442;
+}
